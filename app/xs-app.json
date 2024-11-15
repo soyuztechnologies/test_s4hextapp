@@ -1,0 +1,13 @@
+{
+  "welcomeFile": "/odata/v4/CatalogService/MySalesOrder",
+  "authenticationMethod": "route",
+  "sessionTimeout": 100,
+  "pluginMetadataEndpoint": "/metadata",
+  "routes": [
+    {
+      "source": "^/(.*)$",
+      "destination": "srv-api",
+      "authenticationType": "xsuaa"
+    }
+  ]
+}
